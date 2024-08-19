@@ -1,0 +1,18 @@
+server:
+  port: 6680
+
+spring:
+  application:
+    name: stockService
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8858

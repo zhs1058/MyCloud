@@ -1,0 +1,14 @@
+server:
+  port: 6660
+
+spring:
+  application:
+    name: orderService
+
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos

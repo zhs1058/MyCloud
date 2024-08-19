@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: localhost:8848
+        namespace: public
+        #        namespace: 8ff9945a-1771-49cb-84dd-0f1278eece50 # dev的命名空间
+        name: orderService.yaml
+        group: DEFAULT_GROUP # 使用默认则可省略
+
+        extension-configs[0]:
+          data-id: common.yaml
+          group: DEFAULT_GROUP # 使用默认则可省略
+          refresh: true
